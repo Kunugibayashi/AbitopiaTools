@@ -46,8 +46,8 @@ function zipSize(string $zip): int {
 $target = 'Abitopia';  // ファイル名を変更した場合は変更する
 
 // 指定
-$zipPath = __DIR__ . '\\' . $target . '.zip';
-$dirPath = __DIR__ . '\\' . $target;
+$zipPath = __DIR__ . DIRECTORY_SEPARATOR . $target . '.zip';
+$dirPath = __DIR__ . DIRECTORY_SEPARATOR . $target;
 
 // 解凍前
 $zipBytes = zipSize($zipPath);
